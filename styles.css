@@ -1,0 +1,113 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.header, .features, .registration {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Header styling with Black and Orange */
+.header {
+    background-color: #000; /* Black background */
+    color: #FFA500; /* Orange text */
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFA500; /* Orange button */
+    color: #000; /* Black text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+/* Animation on hover */
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* Feature animations */
+.features .feature {
+    margin: 20px;
+    background: #000; /* Black background */
+    color: #FFA500; /* Orange text */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.features .feature:hover {
+    transform: translateY(-10px);
+}
+
+/* Registration form */
+.registration form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration form input {
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1em;
+    color: #000; /* Black text */
+    background-color: #FFA500; /* Orange background */
+}
+
+.registration form button {
+    padding: 12px 20px;
+    background-color: #FFA500; /* Orange button */
+    color: #000; /* Black text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration form button:hover {
+    background-color: #e69500; /* Darker shade of orange */
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.features .feature {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.features .feature:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.features .feature:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.features .feature:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Footer styling with Black background and Orange text */
+.footer {
+    background-color: #000;
+    color: #FFA500;
+    padding: 20px;
+}
